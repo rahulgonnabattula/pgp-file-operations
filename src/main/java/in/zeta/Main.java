@@ -14,7 +14,7 @@ public class Main {
     public static void main(String[] args)
         throws PGPException, IOException {
         if(args.length<3){
-            System.out.println("Usage:  java -jar pgp-encrypt-file-0.1-shaded.jar <outputFilePath> <inputFilePath> <publicKeyPath>");
+            System.out.println("Usage:  java -jar {executable}.jar {outputFilePath} {inputFilePath} {publicKeyPath}");
             System.exit(-1);
         }
         Security.addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
